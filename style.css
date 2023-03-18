@@ -9,21 +9,20 @@ body
 {
     height: 100vh;
     width: 100vw;
-    background-color: black;
 }
 .nav_bar
 {
-    height: 8vh;
+    height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
-    background-color: rgb(30,30,30);
+    background-color: black;
     border-bottom: 2px solid red;
 }
 .nav_bar .logo
 {
-    width: 50px;
+    width: 30px;
     margin-left: 1rem;
 }
 .nav_bar .menu
@@ -39,6 +38,7 @@ body
     margin: 1rem;
     color: white;
     text-decoration: none;
+    font-size: 15px;
 }
 .nav_item a:hover
 {
@@ -61,7 +61,7 @@ label[for="hamburger"]
 /* Home Section */
 .home_container
 {
-    height: 92vh;
+    height: 90vh;
     width: 100vw;
     display: flex;
     flex-direction: row;
@@ -83,10 +83,10 @@ label[for="hamburger"]
 {
     height: 100%;
     width: 50%;
-    color: red;
+    color: black;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
     padding: 1rem;
 }
 
@@ -112,6 +112,10 @@ label[for="hamburger"]
         background-color: rgb(30,30,30);
         padding: 0.5rem;
     }
+    #hamburger:checked ~ label[for="hamburger"]
+    {
+        color: lime;
+    }
     .menu_glow
     {
         position: relative;
@@ -126,5 +130,41 @@ label[for="hamburger"]
         right: -3px;
         background-image: linear-gradient(45deg,red,transparent,lime);
         z-index: -1;
+    }
+    .home_container
+    {
+        flex-direction: column;
+    }
+    .home_container .split_1
+    {
+        width: 100%;
+    }
+    .home_container .split_2
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .home_container .split_1 .user
+    {
+        max-width: 300px;
+        width: 50%;
+        z-index: -2;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+@media screen and (max-width:250px)
+{
+    *
+    {
+        display: none;
+    }
+}
+@media screen and (max-height:300px)
+{
+    *
+    {
+        display: none;
     }
 }
