@@ -19,6 +19,7 @@ body
     align-items: center;
     list-style-type: none;
     background-color: rgb(30,30,30);
+    border-bottom: 2px solid red;
 }
 .nav_bar .logo
 {
@@ -46,6 +47,7 @@ body
 .nav_item .active
 {
     border-bottom: 1px solid red;
+    color: red;
 }
 input[type="checkbox"]
 {
@@ -54,6 +56,38 @@ input[type="checkbox"]
 label[for="hamburger"]
 {
     display: none;
+}
+
+/* Home Section */
+.home_container
+{
+    height: 92vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+.home_container .split_1
+{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home_container .split_1 .user
+{
+    max-width: 300px;
+    border-radius: 50%;
+}
+.home_container .split_2
+{
+    height: 100%;
+    width: 50%;
+    color: red;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
 }
 
 @media screen and (max-width:800px)
@@ -90,7 +124,7 @@ label[for="hamburger"]
         bottom: -3px;
         left: -3px;
         right: -3px;
-        background-image: linear-gradient(45deg,red,transparent,cyan);
+        background-image: linear-gradient(45deg,red,transparent,lime);
         z-index: -1;
     }
 }
