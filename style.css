@@ -113,6 +113,23 @@ label[for="hamburger"]
     align-items: center;
 }
 
+/* Contact Section */
+.contact_container
+{
+    height: 90vh;
+    width: 100vw;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 1rem;
+}
+.contact_container a
+{
+    margin: 1rem;
+}
+
 @media screen and (max-width:800px)
 {
     .nav_bar .menu
