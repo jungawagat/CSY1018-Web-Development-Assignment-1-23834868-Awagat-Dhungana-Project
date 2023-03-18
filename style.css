@@ -9,6 +9,7 @@ body
 {
     height: 100vh;
     width: 100vw;
+    background-color: black;
 }
 .nav_bar
 {
@@ -27,6 +28,10 @@ body
 .nav_bar .menu
 {
     display: flex;
+}
+.nav_item
+{
+    padding: 10px 13px;
 }
 .nav_item a
 {
@@ -59,5 +64,29 @@ label[for="hamburger"]
         font-size: 30px;
         color: white;
         margin-right: 1rem;
+    }
+    #hamburger:checked ~ .menu
+    {
+        display: block;
+        position: absolute;
+        right: 5%;
+        top: 13%;
+        background-color: rgb(30,30,30);
+        padding: 0.5rem;
+    }
+    .menu_glow
+    {
+        position: relative;
+    }
+    .menu_glow::before, .menu_glow::after
+    {
+        content: '';
+        position: absolute;
+        top: -3px;
+        bottom: -3px;
+        left: -3px;
+        right: -3px;
+        background-image: linear-gradient(45deg,red,transparent,cyan);
+        z-index: -1;
     }
 }
