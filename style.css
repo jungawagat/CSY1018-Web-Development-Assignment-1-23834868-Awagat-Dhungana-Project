@@ -34,6 +34,10 @@ body
     color: white;
     text-decoration: none;
 }
+.nav_item a:hover
+{
+    color: red;
+}
 input[type="checkbox"]
 {
     display: none;
