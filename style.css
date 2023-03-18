@@ -46,3 +46,18 @@ label[for="hamburger"]
 {
     display: none;
 }
+
+@media screen and (max-width:800px)
+{
+    .nav_bar .menu
+    {
+        display: none;
+    }
+    label[for="hamburger"]
+    {
+        display: block;
+        font-size: 30px;
+        color: white;
+        margin-right: 1rem;
+    }
+}
