@@ -129,7 +129,9 @@ label[for="hamburger"]
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
+    font-size: 30px;
+    flex-direction: column;
+    background-color: black;
 }
 .contact_container .contact_form
 {
@@ -139,6 +141,50 @@ label[for="hamburger"]
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: rgb(30,30,30);
+    font-size: 30px;
+}
+.contact_container .mail
+{
+    border: 1px solid red;
+    text-decoration: none;
+    color: red;
+    padding: 10px 12px;
+    border-radius: 12px;
+}
+.contact_container .mail:hover
+{
+    box-shadow: 0px 0px 10px red;
+}
+.contact_form h1
+{
+    color: white;
+}
+.contact_form input
+{
+    margin: 1rem;
+    height: 30px;
+    width: 200px;
+    background-color: transparent;
+    color: white;
+    padding: 0.5rem;
+    border: 1px solid white;
+    outline: none;
+    border-radius: 12px;
+}
+.contact_form button
+{
+    background-color: transparent;
+    padding: 5px 20px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 12px;
+    outline: none;
+}
+.contact_form button:hover
+{
+    cursor: pointer;
+    box-shadow: 0px 0px 5px white;
 }
 .contact_container a
 {
@@ -206,25 +252,11 @@ label[for="hamburger"]
         top: 13%;
         background-color: black;
         padding: 0.5rem;
+        border: 2px solid red;
     }
     #hamburger:checked ~ label[for="hamburger"]
     {
         color: lime;
-    }
-    .menu_glow
-    {
-        position: relative;
-    }
-    .menu_glow::before, .menu_glow::after
-    {
-        content: '';
-        position: absolute;
-        top: -3px;
-        bottom: -3px;
-        left: -3px;
-        right: -3px;
-        background-image: linear-gradient(45deg,red,transparent,lime);
-        z-index: -1;
     }
     .home_container
     {
@@ -248,12 +280,18 @@ label[for="hamburger"]
         margin-top: 2rem;
         margin-bottom: 2rem;
     }
-    .contact_container .icons_wrapper
+    .contact_container
     {
         flex-direction: column;
-        height: 70vh;
-        width: 20vh;
-        z-index: -2;
+    }
+    .contact_container .social_media
+    {
+        flex-direction: row;
+        width: 100%;
+    }
+    .contact_container .contact_form
+    {
+        width: 100%;
     }
 }
 @media screen and (max-width:250px)
