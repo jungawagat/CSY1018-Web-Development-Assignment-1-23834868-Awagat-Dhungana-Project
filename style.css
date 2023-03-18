@@ -78,6 +78,8 @@ label[for="hamburger"]
 {
     max-width: 300px;
     border-radius: 50%;
+    border: 2px solid black;
+    box-shadow: 0px 0px 5px black;
 }
 .home_container .split_2
 {
@@ -88,6 +90,27 @@ label[for="hamburger"]
     flex-direction: column;
     justify-content: center;
     padding: 1rem;
+}
+
+/* Portfolio Section */
+.portfolio_container
+{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.portfolio_container img
+{
+    height: 200px;
+    width: 300px;
+    margin: 1rem;
+    border: 2px solid black;
+    box-shadow: 0px 0px 5px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width:800px)
