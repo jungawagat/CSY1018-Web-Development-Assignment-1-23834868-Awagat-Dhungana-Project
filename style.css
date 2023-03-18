@@ -118,16 +118,71 @@ label[for="hamburger"]
 {
     height: 90vh;
     width: 100vw;
-    font-size: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-    padding: 1rem;
+}
+.contact_container .social_media
+{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+.contact_container .contact_form
+{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .contact_container a
 {
     margin: 1rem;
+}
+.facebook
+{
+    color: blue;
+}
+.facebook:hover
+{
+    text-shadow: 0px 0px 10px blue;
+}
+.instagram
+{
+    color: hotpink;
+}
+.instagram:hover
+{
+    text-shadow: 0px 0px 10px hotpink;
+}
+.twitter
+{
+    color: cyan;
+}
+.twitter:hover
+{
+    text-shadow: 0px 0px 10px cyan;
+}
+.telegram
+{
+    color: gray;
+}
+.telegram:hover
+{
+    text-shadow: 0px 0px 10px gray;
+}
+.snapchat
+{
+    color: yellow;
+}
+.snapchat:hover
+{
+    text-shadow: 0px 0px 10px yellow;
 }
 
 @media screen and (max-width:800px)
@@ -149,7 +204,7 @@ label[for="hamburger"]
         position: absolute;
         right: 5%;
         top: 13%;
-        background-color: rgb(30,30,30);
+        background-color: black;
         padding: 0.5rem;
     }
     #hamburger:checked ~ label[for="hamburger"]
@@ -192,6 +247,13 @@ label[for="hamburger"]
         z-index: -2;
         margin-top: 2rem;
         margin-bottom: 2rem;
+    }
+    .contact_container .icons_wrapper
+    {
+        flex-direction: column;
+        height: 70vh;
+        width: 20vh;
+        z-index: -2;
     }
 }
 @media screen and (max-width:250px)
