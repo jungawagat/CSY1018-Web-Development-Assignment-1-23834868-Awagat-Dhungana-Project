@@ -43,6 +43,10 @@ body
 {
     color: red;
 }
+.nav_item .active
+{
+    border-bottom: 1px solid red;
+}
 input[type="checkbox"]
 {
     display: none;
